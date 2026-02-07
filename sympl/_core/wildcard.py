@@ -65,7 +65,7 @@ def fill_dims_wildcard(
             target_shape.extend([dim_lengths[n] for n in wildcard_names])
             out_dims_without_wildcard.extend(wildcard_names)
         elif i == i_wildcard and not expand_wildcard:
-            target_shape.append(np.product([dim_lengths[n] for n in wildcard_names]))
+            target_shape.append(np.prod([dim_lengths[n] for n in wildcard_names]))
         else:
             target_shape.append(dim_lengths[out_dim])
             out_dims_without_wildcard.append(out_dim)
