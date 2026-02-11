@@ -14,7 +14,7 @@ from ._components import (
     TimeDifferencingWrapper,
 )
 from ._components.timesteppers import AdamsBashforth, Leapfrog, SSPRungeKutta
-from ._core.backend import StateBackend, get_backend, set_backend
+from ._core.backend import DataArrayBackend, StateBackend, get_backend, set_backend
 from ._core.base_components import (
     DiagnosticComponent,
     ImplicitTendencyComponent,
@@ -97,6 +97,7 @@ __all__ = (
     set_backend,
     get_backend,
     StateBackend,
+    DataArrayBackend,
     get_numpy_array,
     jit,
     register_tracer,
