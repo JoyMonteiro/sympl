@@ -133,6 +133,7 @@ def restore_data_arrays_with_properties(
             name=name,
             dims=out_dims_without_wildcard,
             units=output_properties[name]["units"],
+            reference_state=input_state,
         )
     return out_dict
 
